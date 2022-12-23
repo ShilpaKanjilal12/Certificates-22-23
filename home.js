@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
         sln: 1, 
         name: "Certificate of Participation: Introduction to Google Cloud", 
-        message: "Thanks for attending sessions on",
+        message: "Thanks for attending locals on",
         event_name:"Introduction to Google Cloud 2022", 
         link: "./eventpage.html"
     },
@@ -23,8 +23,8 @@ document.getElementById("button").
     addEventListener("click", function () {
         var sln = document.getElementById("select").value
         eventfile = './data/'+sln +'.js'
-        sessionStorage.setItem('event',sln)
-        sessionStorage.setItem('eventfile',eventfile)
+        localStorage.setItem('event',sln)
+        localStorage.setItem('eventfile',eventfile)
         window.location.href = data[sln].link
     });
 
