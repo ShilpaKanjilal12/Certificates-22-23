@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Certificate of Participation: Introduction to Google Cloud", 
         message: "Thanks for attending sessions on",
         event_name:"Introduction to Google Cloud 2022", 
-        link: "./eventpage.html?1"
+        link: "./eventPages/1.html"
     },
     {
         sln: 2, name: "Certificate of GCCP Course Completion", link: "#"
@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
 document.getElementById("button").
     addEventListener("click", function () {
         sln = document.getElementById("select").value
-        eventfile = './data/'+sln +'.js'
         window.location.href = data[sln].link
     });
 
