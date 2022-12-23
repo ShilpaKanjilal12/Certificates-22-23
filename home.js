@@ -1,14 +1,14 @@
 var data = []
-
+var sln
 
 document.addEventListener("DOMContentLoaded", function () {
     data = [{ sln: 0, name: "Select", link: "#" },
     {
         sln: 1, 
         name: "Certificate of Participation: Introduction to Google Cloud", 
-        message: "Thanks for attending locals on",
+        message: "Thanks for attending sessions on",
         event_name:"Introduction to Google Cloud 2022", 
-        link: "./eventpage.html"
+        link: "./eventpage.html?1"
     },
     {
         sln: 2, name: "Certificate of GCCP Course Completion", link: "#"
@@ -21,10 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.getElementById("button").
     addEventListener("click", function () {
-        var sln = document.getElementById("select").value
+        sln = document.getElementById("select").value
         eventfile = './data/'+sln +'.js'
-        localStorage.setItem('event',sln)
-        localStorage.setItem('eventfile',eventfile)
         window.location.href = data[sln].link
     });
 

@@ -3,7 +3,7 @@ var data = []
 
 document.addEventListener("DOMContentLoaded", function () {
     sln = 1
-    document.getElementById("message").innerHTML = "Thanks for attending locals on"
+    document.getElementById("message").innerHTML = "Thanks for attending sessions on"
     document.getElementById("event_name").innerHTML = "Introduction to Google Cloud 2022"
     
     data = [{ sln: 0, name: "Select", link: "#" },
@@ -118,7 +118,6 @@ document.addEventListener("DOMContentLoaded", function () {
     for (i = 0; i <= 36; i++) {
         document.getElementById("select").innerHTML += "<option value=" + data[i].sln + ">" + data[i].name + "</option>";
     }
-    console.log(localStorage.getItem('event'))
 });
 
 document.getElementById("button").
