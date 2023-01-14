@@ -103,16 +103,28 @@ document.addEventListener("DOMContentLoaded", function () {
         {
         sln: 32, name: "Shreshy Srivastava ", link: "https://drive.google.com/file/d/1CQa87kZmizTzJWZZAXWOXmReZp2ZfNQY/view?usp=drivesdk"
         },
-        
-        {sln: 36, name: "Surmai", link: "https://drive.google.com/file/d/1XfNnsrY3s9KTgos8arWThvd-MIjzYyOT/view?usp=drivesdk"
+        {
+        sln: 33, name: "Shristi Agrawal", link: "https://drive.google.com/file/d/1yrx6oZoasPAbJbxGXdNlzJwuVFSeNIUP/view?usp=drivesdk"
         },
-        {sln: 37, name: "Udita Das", link: "https://drive.google.com/file/d/1EHNij8hxOzPzi2-LzL5Hra_A97GKvK47/view?usp=drivesdk"
+        {
+        sln: 34, name: "Shriyansh Sinha", link: "https://drive.google.com/file/d/15EH2pFXJcu4en8s7oJX3YlYuJDqR1qgO/view?usp=drivesdk"
         },
-        {sln: 38, name: "Vaibhav Gupta", link: "https://drive.google.com/file/d/1FOr2UnlvRM_4WNfB9YtwlXj8_Bc52ftn/view?usp=drivesdk"
+        {
+        sln: 35, name: "Sravyasri Mortha", link: "https://drive.google.com/file/d/1DsTvqay7Z6GTa-rA-vGutuhihtsGgFTN/view?usp=drivesdk"
         },
-        {sln: 39, name: "Vinay M Sobarad ", link: "https://drive.google.com/file/d/1KfnVxzcXnleBCIDC9zPVtezeO0j8qaMM/view?usp=drivesdk"
+        {
+        sln: 36, name: "Surmai", link: "https://drive.google.com/file/d/1XfNnsrY3s9KTgos8arWThvd-MIjzYyOT/view?usp=drivesdk"
+        },
+        {
+        sln: 37, name: "Udita Das", link: "https://drive.google.com/file/d/1EHNij8hxOzPzi2-LzL5Hra_A97GKvK47/view?usp=drivesdk"
+        },
+        {
+        sln: 38, name: "Vaibhav Gupta", link: "https://drive.google.com/file/d/1FOr2UnlvRM_4WNfB9YtwlXj8_Bc52ftn/view?usp=drivesdk"
+        },
+        {
+        sln: 39, name: "Vinay M Sobarad ", link: "https://drive.google.com/file/d/1KfnVxzcXnleBCIDC9zPVtezeO0j8qaMM/view?usp=drivesdk"
         },]
-    for (i = 0; i <= 36; i++) {
+    for (i = 0; i <= 39; i++) {
         document.getElementById("select").innerHTML += "<option value=" + data[i].sln + ">" + data[i].name + "</option>";
     }
 });
